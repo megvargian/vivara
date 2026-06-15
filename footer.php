@@ -12,10 +12,7 @@
 <!-- FOOTER -->
 <footer>
   <a href="#" class="nav-logo" style="text-decoration:none;">
-    <div class="nav-logo-text">
-      <div class="nav-logo-vivara">VIV<span class="cedar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 26" style="height:0.8em;width:auto;margin:0 2px;"><rect x="5.5" y="20" width="3" height="5" rx="1" fill="#03914D"/><path d="M0.5 20 Q7 14 13.5 20Z" fill="#03914D"/><path d="M2 15.5 Q7 9.5 12 15.5Z" fill="#03914D"/><path d="M3.5 11 Q7 5.5 10.5 11Z" fill="#03914D"/><path d="M5 7 Q7 2.5 9 7Z" fill="#03914D"/><circle cx="7" cy="1.5" r="1.2" fill="#03914D"/></svg></span>RA</div>
-      <div class="nav-logo-foundation">Foundation</div>
-    </div>
+    <img class="nav-logo-image" src="<?php echo esc_url( get_template_directory_uri() . '/inc/assets/images/vivara_logo_white.png' ); ?>" alt="Vivara Foundation">
   </a>
   <ul class="footer-links">
     <li><a href="#mission">Mission</a></li>
