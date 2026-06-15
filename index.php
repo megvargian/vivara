@@ -1090,7 +1090,7 @@ footer {
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="#mission">Missions</a></li>
+    <li><a href="#mission">Mission</a></li>
     <li><a href="#pillars">Pillars</a></li>
     <li><a href="#programs">Programs</a></li>
     <li><a href="#founders">Founders</a></li>
