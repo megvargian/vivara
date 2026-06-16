@@ -25,8 +25,10 @@
 <!-- WordPress handoff note: Sections are organized with clear IDs and reusable cards. Text, images, tabs, program rows, partner cards, and founder profiles can be added, deleted, or edited in WordPress content blocks without changing the visual design. -->
 
 <!-- CURSOR -->
+<?php if ( ! isMob() ) : ?>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
+<?php endif; ?>
 
 <!-- NAV -->
 <nav id="navbar">
