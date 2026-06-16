@@ -23,7 +23,7 @@
     <li><a href="#partners">Partners</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div style="text-align:right;">
+  <div class="footer-meta" style="text-align:right;">
     <div class="footer-statement">We do not respond to change. We help design it.</div>
     <div class="footer-copy" style="margin-top:4px;">© 2025 Vivara Foundation. All rights reserved.</div>
   </div>
