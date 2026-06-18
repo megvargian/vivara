@@ -2,7 +2,7 @@
 require_once __DIR__ . '/helpers.php';
 
 $eyebrow = get_field('eyebrow') ?: 'Generations Equality & Civic Empowerment · Lebanon';
-$title = "EMPOWER\n<span class=\"stroke\">CREATE</span>\n<span class=\"accent\">CHANGE.</span>";
+$title = get_field('title') ?: "EMPOWER\n<span class=\"stroke\">CREATE</span>\n<span class=\"accent\">CHANGE.</span>";
 $description = get_field('description') ?: "Vivara Foundation works at the intersection of education, leadership, and civic transformation — giving Lebanon's generations the voice, access, and opportunity to shape what comes next.";
 $primary_button_text = get_field('primary_button_text') ?: 'Get Involved';
 $primary_button_url = get_field('primary_button_url') ?: '#contact';
