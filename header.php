@@ -33,7 +33,7 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    <img class="nav-logo-image" src="<?php echo esc_url( get_template_directory_uri() . '/inc/assets/images/vivara_logo_white.png' ); ?>" alt="Vivara Foundation">
+    <img class="nav-logo-image" src="<?php echo esc_url( get_template_directory_uri() . '/inc/assets/images/vivara_logo_white_crop.png' ); ?>" alt="Vivara Foundation">
   </a>
   <ul class="nav-links">
     <li><a href="#mission">Mission</a></li>
