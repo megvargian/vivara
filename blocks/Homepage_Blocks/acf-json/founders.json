@@ -1,0 +1,31 @@
+{
+  "key": "group_vivara_founders",
+  "title": "Vivara Founders",
+  "fields": [
+    {"key": "field_vivara_founders_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_founders_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_founders_subtitle", "label": "Subtitle", "name": "subtitle", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_founders_profiles",
+      "label": "Founder Profiles",
+      "name": "profiles",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Founder Profile",
+      "sub_fields": [
+        {"key": "field_vivara_founders_profile_photo", "label": "Photo", "name": "photo", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all"},
+        {"key": "field_vivara_founders_profile_name", "label": "Name", "name": "name", "type": "text"},
+        {"key": "field_vivara_founders_profile_bio", "label": "Biography", "name": "bio", "type": "textarea", "rows": 3, "new_lines": ""}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-founders"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496008
+}

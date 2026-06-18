@@ -234,23 +234,62 @@ function gutenberg_editor_assets()
     // Load the theme styles within Gutenberg.
     wp_enqueue_style('my-gutenberg-editor-styles', get_theme_file_uri('/assets/gutenberg-editor-styles.css'), FALSE);
 }
+
+function vivara_acf_blocks_path()
+{
+    return get_theme_file_path('/blocks/Homepage_Blocks/acf-json');
+}
+
+add_filter('acf/settings/load_json', 'vivara_acf_load_json_paths');
+function vivara_acf_load_json_paths($paths)
+{
+    $paths[] = vivara_acf_blocks_path();
+
+    return $paths;
+}
+
+add_filter('acf/settings/save_json', 'vivara_acf_save_json_path');
+function vivara_acf_save_json_path($path)
+{
+    return vivara_acf_blocks_path();
+}
+
+function vivara_register_homepage_section_block($name, $title, $template, $keywords = array())
+{
+    acf_register_block_type(
+        array(
+            'name' => $name,
+            'title' => $title,
+            'description' => sprintf(__('Editable %s section for the Vivara homepage.'), $title),
+            'render_template' => 'blocks/Homepage_Blocks/' . $template,
+            'category' => 'formatting',
+            'icon' => 'layout',
+            'keywords' => $keywords,
+            'mode' => 'edit',
+            'supports' => array(
+                'align' => false,
+                'jsx' => false,
+            ),
+        )
+    );
+}
+
 add_action('acf/init', 'my_acf_init_block_types');
 function my_acf_init_block_types()
 {
-    // Check function exists.
     if (function_exists('acf_register_block_type')) {
-        // register a testimonial block.
-        // acf_register_block_type(
-        //     array(
-        //         'name'              => 'Block1',
-        //         'title'             => __('Block1'),
-        //         'description'       => __('This is the first Block of Homepage'),
-        //         'render_template'   => 'blocks/Homepage_Blocks/block_1.php',
-        //         'category'          => 'formatting',
-        //         'icon'              => 'admin-comments',
-        //         'keywords'          => array('testimonial', 'quote'),
-        //     )
-        // );
+        vivara_register_homepage_section_block('vivara-hero', __('Vivara Hero'), 'hero.php', array('vivara', 'hero', 'homepage'));
+        vivara_register_homepage_section_block('vivara-ticker', __('Vivara Ticker'), 'ticker.php', array('vivara', 'ticker', 'homepage'));
+        vivara_register_homepage_section_block('vivara-mission', __('Vivara Mission'), 'mission.php', array('vivara', 'mission', 'homepage'));
+        vivara_register_homepage_section_block('vivara-challenge', __('Vivara Challenge'), 'challenge.php', array('vivara', 'challenge', 'homepage'));
+        vivara_register_homepage_section_block('vivara-pillars', __('Vivara Pillars'), 'pillars.php', array('vivara', 'pillars', 'homepage'));
+        vivara_register_homepage_section_block('vivara-programs', __('Vivara Programs'), 'programs.php', array('vivara', 'programs', 'homepage'));
+        vivara_register_homepage_section_block('vivara-founder', __('Vivara Founder'), 'founder.php', array('vivara', 'founder', 'homepage'));
+        vivara_register_homepage_section_block('vivara-founders', __('Vivara Founders'), 'founders.php', array('vivara', 'founders', 'homepage'));
+        vivara_register_homepage_section_block('vivara-approach', __('Vivara Approach'), 'approach.php', array('vivara', 'approach', 'homepage'));
+        vivara_register_homepage_section_block('vivara-impact', __('Vivara Impact'), 'impact.php', array('vivara', 'impact', 'homepage'));
+        vivara_register_homepage_section_block('vivara-partners', __('Vivara Partners'), 'partners.php', array('vivara', 'partners', 'homepage'));
+        vivara_register_homepage_section_block('vivara-final-cta', __('Vivara Final CTA'), 'final-cta.php', array('vivara', 'cta', 'homepage'));
     }
 }
 function isMob(){

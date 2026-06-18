@@ -1,0 +1,31 @@
+{
+  "key": "group_vivara_partners",
+  "title": "Vivara Partners",
+  "fields": [
+    {"key": "field_vivara_partners_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_partners_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_partners_subtitle", "label": "Subtitle", "name": "subtitle", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_partners_cards",
+      "label": "Partner Cards",
+      "name": "cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Partner Card",
+      "sub_fields": [
+        {"key": "field_vivara_partners_card_icon_svg", "label": "Icon SVG", "name": "icon_svg", "type": "textarea", "rows": 6, "new_lines": ""},
+        {"key": "field_vivara_partners_card_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_partners_card_body", "label": "Body", "name": "body", "type": "textarea", "rows": 3, "new_lines": ""}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-partners"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496011
+}

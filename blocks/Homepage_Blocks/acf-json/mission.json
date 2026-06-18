@@ -1,0 +1,46 @@
+{
+  "key": "group_vivara_mission",
+  "title": "Vivara Mission",
+  "fields": [
+    {"key": "field_vivara_mission_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_mission_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_mission_body_1", "label": "Body Paragraph 1", "name": "body_1", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_mission_body_2", "label": "Body Paragraph 2", "name": "body_2", "type": "textarea", "rows": 4, "new_lines": ""},
+    {
+      "key": "field_vivara_mission_beliefs",
+      "label": "Belief Items",
+      "name": "beliefs",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Belief",
+      "sub_fields": [
+        {"key": "field_vivara_mission_belief_title", "label": "Highlight", "name": "title", "type": "text"},
+        {"key": "field_vivara_mission_belief_body", "label": "Body", "name": "body", "type": "textarea", "rows": 2, "new_lines": ""}
+      ]
+    },
+    {
+      "key": "field_vivara_mission_cards",
+      "label": "Mission Cards",
+      "name": "cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Mission Card",
+      "sub_fields": [
+        {"key": "field_vivara_mission_card_number", "label": "Number", "name": "number", "type": "text"},
+        {"key": "field_vivara_mission_card_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_mission_card_body", "label": "Body", "name": "body", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_mission_card_style", "label": "Style", "name": "style", "type": "select", "choices": {"m-card-a": "Dark Blue", "m-card-b": "Green", "m-card-c": "White", "m-card-d": "Light Blue"}, "default_value": "m-card-a", "ui": 1}
+      ]
+    },
+    {"key": "field_vivara_mission_tagline", "label": "Tagline Quote", "name": "tagline", "type": "textarea", "rows": 2, "new_lines": ""}
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-mission"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496003
+}

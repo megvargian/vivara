@@ -1,0 +1,23 @@
+{
+  "key": "group_vivara_final_cta",
+  "title": "Vivara Final CTA",
+  "fields": [
+    {"key": "field_vivara_final_cta_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_final_cta_title", "label": "Title", "name": "title", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_final_cta_subtitle", "label": "Subtitle", "name": "subtitle", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_final_cta_primary_button_text", "label": "Primary Button Text", "name": "primary_button_text", "type": "text"},
+    {"key": "field_vivara_final_cta_primary_button_url", "label": "Primary Button URL", "name": "primary_button_url", "type": "url"},
+    {"key": "field_vivara_final_cta_secondary_button_text", "label": "Secondary Button Text", "name": "secondary_button_text", "type": "text"},
+    {"key": "field_vivara_final_cta_secondary_button_url", "label": "Secondary Button URL", "name": "secondary_button_url", "type": "url"},
+    {"key": "field_vivara_final_cta_site_label", "label": "Site Label", "name": "site_label", "type": "text"}
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-final-cta"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496012
+}

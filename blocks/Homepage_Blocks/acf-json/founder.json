@@ -1,0 +1,24 @@
+{
+  "key": "group_vivara_founder",
+  "title": "Vivara Founder",
+  "fields": [
+    {"key": "field_vivara_founder_image", "label": "Image", "name": "image", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all"},
+    {"key": "field_vivara_founder_name", "label": "Name", "name": "name", "type": "text"},
+    {"key": "field_vivara_founder_role", "label": "Role", "name": "role", "type": "text"},
+    {"key": "field_vivara_founder_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_founder_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_founder_quote", "label": "Quote", "name": "quote", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_founder_body", "label": "Body", "name": "body", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_founder_button_text", "label": "Button Text", "name": "button_text", "type": "text"},
+    {"key": "field_vivara_founder_button_url", "label": "Button URL", "name": "button_url", "type": "url"}
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-founder"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496007
+}

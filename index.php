@@ -3,11 +3,21 @@
  * Template Name: Homepage
  */
 get_header();
-?>
-<?php
-	// while ( have_posts() ) : the_post();
-    //     the_content();
-	// endwhile;
+
+$vivara_homepage_rendered_blocks = false;
+
+if (have_posts()) {
+  while (have_posts()) {
+    the_post();
+
+    if (has_blocks(get_the_content())) {
+      the_content();
+      $vivara_homepage_rendered_blocks = true;
+    }
+  }
+}
+
+if (!$vivara_homepage_rendered_blocks) :
 ?>
 <!-- HERO -->
 <section class="hero" id="home">
@@ -419,5 +429,5 @@ get_header();
     jQuery(document).ready(function($) {
     })
 </script>
-<?
-get_footer();
+<?php endif; ?>
+<?php get_footer();

@@ -1,0 +1,42 @@
+{
+  "key": "group_vivara_programs",
+  "title": "Vivara Programs",
+  "fields": [
+    {"key": "field_vivara_programs_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_programs_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_programs_tabs",
+      "label": "Tab Links",
+      "name": "tabs",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Tab Link",
+      "sub_fields": [
+        {"key": "field_vivara_programs_tab_label", "label": "Label", "name": "label", "type": "text"},
+        {"key": "field_vivara_programs_tab_target", "label": "Target", "name": "target", "type": "text"}
+      ]
+    },
+    {
+      "key": "field_vivara_programs_items",
+      "label": "Program Items",
+      "name": "items",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Program Item",
+      "sub_fields": [
+        {"key": "field_vivara_programs_item_number", "label": "Number", "name": "number", "type": "text"},
+        {"key": "field_vivara_programs_item_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_programs_item_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-programs"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496006
+}

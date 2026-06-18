@@ -1,0 +1,23 @@
+{
+  "key": "group_vivara_hero",
+  "title": "Vivara Hero",
+  "fields": [
+    {"key": "field_vivara_hero_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_hero_title", "label": "Title", "name": "title", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_hero_description", "label": "Description", "name": "description", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_hero_primary_button_text", "label": "Primary Button Text", "name": "primary_button_text", "type": "text"},
+    {"key": "field_vivara_hero_primary_button_url", "label": "Primary Button URL", "name": "primary_button_url", "type": "url"},
+    {"key": "field_vivara_hero_secondary_button_text", "label": "Secondary Button Text", "name": "secondary_button_text", "type": "text"},
+    {"key": "field_vivara_hero_secondary_button_url", "label": "Secondary Button URL", "name": "secondary_button_url", "type": "url"},
+    {"key": "field_vivara_hero_scroll_label", "label": "Scroll Label", "name": "scroll_label", "type": "text"}
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-hero"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496001
+}

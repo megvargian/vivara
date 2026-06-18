@@ -1,0 +1,32 @@
+{
+  "key": "group_vivara_challenge",
+  "title": "Vivara Challenge",
+  "fields": [
+    {"key": "field_vivara_challenge_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_challenge_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_challenge_subtitle", "label": "Subtitle", "name": "subtitle", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_challenge_cards",
+      "label": "Challenge Cards",
+      "name": "cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Challenge Card",
+      "sub_fields": [
+        {"key": "field_vivara_challenge_card_number", "label": "Number", "name": "number", "type": "text"},
+        {"key": "field_vivara_challenge_card_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_challenge_card_body", "label": "Body", "name": "body", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_challenge_card_icon_svg", "label": "Icon SVG", "name": "icon_svg", "type": "textarea", "rows": 6, "new_lines": ""}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-challenge"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496004
+}

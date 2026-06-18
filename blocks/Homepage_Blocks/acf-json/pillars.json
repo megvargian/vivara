@@ -1,0 +1,32 @@
+{
+  "key": "group_vivara_pillars",
+  "title": "Vivara Pillars",
+  "fields": [
+    {"key": "field_vivara_pillars_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_pillars_title", "label": "Title", "name": "title", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_pillars_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_pillars_cards",
+      "label": "Pillar Cards",
+      "name": "cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Pillar Card",
+      "sub_fields": [
+        {"key": "field_vivara_pillars_card_number", "label": "Number", "name": "number", "type": "text"},
+        {"key": "field_vivara_pillars_card_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_pillars_card_body", "label": "Body", "name": "body", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_pillars_card_tag", "label": "Tag", "name": "tag", "type": "text"}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-pillars"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496005
+}

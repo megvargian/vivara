@@ -1,0 +1,26 @@
+{
+  "key": "group_vivara_ticker",
+  "title": "Vivara Ticker",
+  "fields": [
+    {
+      "key": "field_vivara_ticker_items",
+      "label": "Ticker Items",
+      "name": "items",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Add Ticker Item",
+      "sub_fields": [
+        {"key": "field_vivara_ticker_item_text", "label": "Text", "name": "text", "type": "text"}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-ticker"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496002
+}

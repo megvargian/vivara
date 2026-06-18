@@ -1,0 +1,31 @@
+{
+  "key": "group_vivara_impact",
+  "title": "Vivara Impact",
+  "fields": [
+    {"key": "field_vivara_impact_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_impact_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_impact_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""},
+    {
+      "key": "field_vivara_impact_cards",
+      "label": "Impact Cards",
+      "name": "cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Impact Card",
+      "sub_fields": [
+        {"key": "field_vivara_impact_card_metric", "label": "Metric", "name": "metric", "type": "text"},
+        {"key": "field_vivara_impact_card_label", "label": "Label", "name": "label", "type": "text"},
+        {"key": "field_vivara_impact_card_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-impact"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1718496010
+}
