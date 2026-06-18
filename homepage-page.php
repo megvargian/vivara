@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Homepage Second
+ * Template Name: Homepage
  */
 get_header();
 
@@ -284,17 +284,10 @@ if (!$vivara_homepage_rendered_blocks) :
       </div>
       <div class="founder-profile-content">
         <h3 class="founder-profile-name">Charbel Semaan</h3>
+        <p class="founder-profile-bio">Senior Architect</p>
       </div>
     </article>
-    <article class="founder-profile reveal reveal-delay-1">
-      <div class="founder-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Fabienne%20Semaan.jpeg'); ?>" alt="Fabienne Semaan">
-      </div>
-      <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Fabienne Semaan</h3>
-      </div>
-    </article>
-    <article class="founder-profile reveal reveal-delay-2">
+     <article class="founder-profile reveal reveal-delay-2">
       <div class="founder-photo">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Joy-Semaan-lawyer.jpeg'); ?>" alt="Joy Semaan">
       </div>
@@ -321,13 +314,22 @@ if (!$vivara_homepage_rendered_blocks) :
         <p class="founder-profile-bio">Medical Doctor</p>
       </div>
     </article>
+    <article class="founder-profile reveal reveal-delay-1">
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Fabienne%20Semaan.jpeg'); ?>" alt="Fabienne Semaan">
+      </div>
+      <div class="founder-profile-content">
+        <h3 class="founder-profile-name">Fabienne Semaan</h3>
+        <p class="founder-profile-bio">Projects Designs and Fundraising Senior Consultant</p>
+      </div>
+    </article>
     <article class="founder-profile reveal reveal-delay-5">
       <div class="founder-photo">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Richard-Semaan-Senior-Architect.jpeg'); ?>" alt="Richard Semaan">
       </div>
       <div class="founder-profile-content">
         <h3 class="founder-profile-name">Richard Semaan</h3>
-        <p class="founder-profile-bio">Senior Architect</p>
+        <p class="founder-profile-bio">Wsp Senior Architect and Landscape Design Consultant</p>
       </div>
     </article>
   </div>
