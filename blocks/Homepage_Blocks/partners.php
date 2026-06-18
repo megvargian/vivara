@@ -4,64 +4,24 @@ require_once __DIR__ . '/helpers.php';
 $eyebrow = get_field('eyebrow') ?: 'Partners & Supporters';
 $title = get_field('title') ?: "Collective Transformation\nRequires Collective Leadership.";
 $subtitle = get_field('subtitle') ?: 'Sustainable impact emerges through shared ownership, not isolated action.';
-$image_base_url = trailingslashit(get_template_directory_uri()) . 'inc/assets/images/';
+$cards = get_field('cards') ?: array(
+    array('title' => 'Universities', 'body' => 'Academic institutions supporting generational development and graduate access programs.', 'icon_svg' => '<svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="14" width="28" height="20" rx="2"/><path d="M14 14V10a6 6 0 0112 0v4"/></svg>'),
+    array('title' => 'NGOs & Civil Society', 'body' => 'Organizations aligned with civic engagement and generational empowerment missions.', 'icon_svg' => '<svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="14"/><path d="M20 6v14l8 4"/></svg>'),
+    array('title' => 'Private Sector', 'body' => 'Companies creating real employment pathways for graduates and emerging generations.', 'icon_svg' => '<svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 32V16l12-8 12 8v16"/><rect x="16" y="22" width="8" height="10"/></svg>'),
+    array('title' => 'Diaspora', 'body' => 'Lebanese expats committed to mentoring, investing, and returning home.', 'icon_svg' => '<svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="14"/><path d="M6 20h28M20 6c-5 4-8 9-8 14s3 10 8 14M20 6c5 4 8 9 8 14s-3 10-8 14"/></svg>'),
+);
 ?>
 <section class="partners" id="partners">
   <div class="eyebrow reveal"><div class="eyebrow-line"></div><?php echo esc_html($eyebrow); ?></div>
   <h2 class="big-title reveal"><?php echo vivara_block_multiline($title); ?></h2>
   <p class="partners-sub reveal"><?php echo esc_html($subtitle); ?></p>
-  <div class="partners-grid">
-    <article class="partner-profile reveal">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Charbel%20Semaan.jpeg'); ?>" alt="Charbel Semaan">
+  <div class="partner-types">
+    <?php foreach ($cards as $index => $card) : ?>
+      <div class="pt-card <?php echo esc_attr(vivara_block_reveal_class($index)); ?>">
+        <?php echo vivara_block_svg(vivara_block_value($card, 'icon_svg')); ?>
+        <div class="pt-title"><?php echo esc_html(vivara_block_value($card, 'title')); ?></div>
+        <p class="pt-body"><?php echo esc_html(vivara_block_value($card, 'body')); ?></p>
       </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Charbel Semaan</h3>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-1">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Fabienne%20Semaan.jpeg'); ?>" alt="Fabienne Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Fabienne Semaan</h3>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-2">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Joy-Semaan-lawyer.jpeg'); ?>" alt="Joy Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Joy Semaan</h3>
-        <p class="partner-profile-role">Lawyer</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-3">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Maria%20Malek%20%2C%20Senior%20Design%20Consultant.jpeg'); ?>" alt="Maria Malek">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Maria Malek</h3>
-        <p class="partner-profile-role">Senior Design Consultant</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-4">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Pamela%20Semaan%20%2C%20Medical%20Doctor.jpeg'); ?>" alt="Pamela Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Pamela Semaan</h3>
-        <p class="partner-profile-role">Medical Doctor</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-5">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url($image_base_url . 'Richard-Semaan-Senior-Architect.jpeg'); ?>" alt="Richard Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Richard Semaan</h3>
-        <p class="partner-profile-role">Senior Architect</p>
-      </div>
-    </article>
+    <?php endforeach; ?>
   </div>
 </section>

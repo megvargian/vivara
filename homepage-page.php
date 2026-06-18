@@ -276,48 +276,58 @@ if (!$vivara_homepage_rendered_blocks) :
 <section class="founders" id="founders">
   <div class="eyebrow reveal"><div class="eyebrow-line"></div>Founders</div>
   <h2 class="big-title reveal">The People<br>Behind Vivara.</h2>
-  <p class="founders-sub reveal reveal-delay-1">This editable section is prepared for six founders. Replace each placeholder image, name, and biography directly in WordPress or in the HTML content block.</p>
+  <p class="founders-sub reveal reveal-delay-1">Meet the people behind Vivara's network of leadership, expertise, and long-term support.</p>
   <div class="founders-grid">
     <article class="founder-profile reveal">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Charbel%20Semaan.jpeg'); ?>" alt="Charbel Semaan">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 01</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Charbel Semaan</h3>
       </div>
     </article>
     <article class="founder-profile reveal reveal-delay-1">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Fabienne%20Semaan.jpeg'); ?>" alt="Fabienne Semaan">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 02</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Fabienne Semaan</h3>
       </div>
     </article>
     <article class="founder-profile reveal reveal-delay-2">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Joy-Semaan-lawyer.jpeg'); ?>" alt="Joy Semaan">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 03</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Joy Semaan</h3>
+        <p class="founder-profile-bio">Lawyer</p>
       </div>
     </article>
     <article class="founder-profile reveal reveal-delay-3">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Maria%20Malek%20%2C%20Senior%20Design%20Consultant.jpeg'); ?>" alt="Maria Malek">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 04</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Maria Malek</h3>
+        <p class="founder-profile-bio">Senior Design Consultant</p>
       </div>
     </article>
     <article class="founder-profile reveal reveal-delay-4">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Pamela%20Semaan%20%2C%20Medical%20Doctor.jpeg'); ?>" alt="Pamela Semaan">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 05</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Pamela Semaan</h3>
+        <p class="founder-profile-bio">Medical Doctor</p>
       </div>
     </article>
     <article class="founder-profile reveal reveal-delay-5">
-      <div class="founder-photo">Photo</div>
+      <div class="founder-photo">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Richard-Semaan-Senior-Architect.jpeg'); ?>" alt="Richard Semaan">
+      </div>
       <div class="founder-profile-content">
-        <h3 class="founder-profile-name">Founder Name 06</h3>
-        <p class="founder-profile-bio">Short biography to be added here. This text can be edited, expanded, or removed in WordPress.</p>
+        <h3 class="founder-profile-name">Richard Semaan</h3>
+        <p class="founder-profile-bio">Senior Architect</p>
       </div>
     </article>
   </div>
@@ -375,59 +385,39 @@ if (!$vivara_homepage_rendered_blocks) :
   <div class="eyebrow reveal"><div class="eyebrow-line"></div>Partners & Supporters</div>
   <h2 class="big-title reveal">Collective Transformation<br>Requires Collective Leadership.</h2>
   <p class="partners-sub reveal">Sustainable impact emerges through shared ownership, not isolated action.</p>
-  <div class="partners-grid">
-    <article class="partner-profile reveal">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Charbel%20Semaan.jpeg'); ?>" alt="Charbel Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Charbel Semaan</h3>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-1">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Fabienne%20Semaan.jpeg'); ?>" alt="Fabienne Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Fabienne Semaan</h3>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-2">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Joy-Semaan-lawyer.jpeg'); ?>" alt="Joy Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Joy Semaan</h3>
-        <p class="partner-profile-role">Lawyer</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-3">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Maria%20Malek%20%2C%20Senior%20Design%20Consultant.jpeg'); ?>" alt="Maria Malek">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Maria Malek</h3>
-        <p class="partner-profile-role">Senior Design Consultant</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-4">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Pamela%20Semaan%20%2C%20Medical%20Doctor.jpeg'); ?>" alt="Pamela Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Pamela Semaan</h3>
-        <p class="partner-profile-role">Medical Doctor</p>
-      </div>
-    </article>
-    <article class="partner-profile reveal reveal-delay-5">
-      <div class="partner-photo">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/inc/assets/images/Richard-Semaan-Senior-Architect.jpeg'); ?>" alt="Richard Semaan">
-      </div>
-      <div class="partner-profile-content">
-        <h3 class="partner-profile-name">Richard Semaan</h3>
-        <p class="partner-profile-role">Senior Architect</p>
-      </div>
-    </article>
+  <div class="partner-types">
+    <div class="pt-card reveal">
+      <svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="6" y="14" width="28" height="20" rx="2"/>
+        <path d="M14 14V10a6 6 0 0112 0v4"/>
+      </svg>
+      <div class="pt-title">Universities</div>
+      <p class="pt-body">Academic institutions supporting generational development and graduate access programs.</p>
+    </div>
+    <div class="pt-card reveal reveal-delay-1">
+      <svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="20" cy="20" r="14"/>
+        <path d="M20 6v14l8 4"/>
+      </svg>
+      <div class="pt-title">NGOs & Civil Society</div>
+      <p class="pt-body">Organizations aligned with civic engagement and generational empowerment missions.</p>
+    </div>
+    <div class="pt-card reveal reveal-delay-2">
+      <svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M8 32V16l12-8 12 8v16"/>
+        <rect x="16" y="22" width="8" height="10"/>
+      </svg>
+      <div class="pt-title">Private Sector</div>
+      <p class="pt-body">Companies creating real employment pathways for graduates and emerging generations.</p>
+    </div>
+    <div class="pt-card reveal reveal-delay-3">
+      <svg class="pt-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="20" cy="20" r="14"/>
+        <path d="M6 20h28M20 6c-5 4-8 9-8 14s3 10 8 14M20 6c5 4 8 9 8 14s-3 10-8 14"/>
+      </svg>
+      <div class="pt-title">Diaspora</div>
+      <p class="pt-body">Lebanese expats committed to mentoring, investing, and returning home.</p>
+    </div>
   </div>
 </section>
 
