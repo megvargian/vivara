@@ -42,6 +42,7 @@
     <li><a href="#founders">Founders</a></li>
     <li><a href="#impact">Impact</a></li>
     <li><a href="#partners">Partners</a></li>
+    <li><a href="#engagements">Diplomacy & Collaboration</a></li>
     <li><a href="#contact" class="nav-cta">Get Involved</a></li>
   </ul>
 </nav>
