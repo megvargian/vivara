@@ -78,8 +78,6 @@ input:focus, textarea:focus, select:focus, option:focus {
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--black);
-    color: var(--white);
     overflow-x: hidden;
     cursor: none;
   }
@@ -233,7 +231,7 @@ input:focus, textarea:focus, select:focus, option:focus {
   /* Grid overlay */
   .hero-grid {
     position: absolute; inset:0; z-index:1;
-    background-image: linear-gradient(#ffffff05 1px, #0000 1px), linear-gradient(90deg, #ffffff05 1px, #0000 1px);
+  background-image: linear-gradient(#ffffff05 1px, #0000 1px), linear-gradient(90deg, #ffffff05 1px, #0000 1px);
     background-size: 80px 80px;
   }
 
@@ -242,7 +240,7 @@ input:focus, textarea:focus, select:focus, option:focus {
     position: absolute; z-index:1;
     top:0; right: 200px;
     width: 1px; height: 100%;
-    background: linear-gradient(#0000, #03914d66 40% 60%, #0000);
+    background: linear-gradient(to bottom, transparent 0%, rgba(3,145,77,0.4) 40%, rgba(3,145,77,0.4) 60%, transparent 100%);
     transform: skewX(-15deg);
   }
 
