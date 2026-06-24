@@ -1610,56 +1610,6 @@ section {
   margin-bottom: 56px;
 }
 
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.partner-profile {
-  background: white;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.partner-profile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.18);
-}
-
-.partner-photo {
-  aspect-ratio: 4 / 4.5;
-  background: linear-gradient(135deg, rgba(31, 49, 122, 0.12), rgba(3, 145, 77, 0.12));
-}
-
-.partner-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.partner-profile-content {
-  padding: 24px;
-}
-
-.partner-profile-name {
-  font-family: "Mukta Malar", sans-serif;
-  font-size: 17px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--dark-blue);
-  margin-bottom: 8px;
-}
-
-.partner-profile-role {
-  font-size: 13px;
-  line-height: 1.6;
-  color: #777;
-  font-weight: 300;
-  margin: 0;
-}
-
 .partner-types {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1922,5 +1872,341 @@ footer {
   }
   .ticker-item {
     padding: 0 24px;
+  }
+}
+.veng-section {
+  font-family: "Montserrat", sans-serif;
+  background: #F1F1F2;
+  padding: 100px 64px;
+  color: #0d1433;
+}
+
+.veng-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.veng-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #03914D;
+  margin-bottom: 18px;
+}
+
+.veng-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #03914D;
+}
+
+.veng-title {
+  font-family: "Mukta Malar", sans-serif;
+  font-size: clamp(34px, 5vw, 60px);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #1F317A;
+  margin-bottom: 16px;
+}
+
+.veng-sub {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #666;
+  max-width: 560px;
+  margin-bottom: 56px;
+}
+
+/* Category filter tabs */
+.veng-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.veng-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+  background: #fff;
+  border: 1px solid #e3e3e6;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.veng-tab:hover {
+  border-color: #1F317A;
+  color: #1F317A;
+}
+
+.veng-tab.active {
+  background: #1F317A;
+  color: #fff;
+  border-color: #1F317A;
+}
+
+.veng-tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  font-size: 9px;
+  font-weight: 800;
+  background: #e3e3e6;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.veng-tab.active .veng-tab-count {
+  background: #03914D;
+  color: #fff;
+}
+
+/* Category block */
+.veng-category {
+  margin-bottom: 56px;
+}
+
+.veng-category.hidden {
+  display: none;
+}
+
+.veng-cat-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1F317A;
+  margin-bottom: 26px;
+}
+
+.veng-cat-label::before {
+  content: "";
+  flex: 0 0 28px;
+  height: 2px;
+  background: #03914D;
+}
+
+.veng-cat-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e3e3e6;
+}
+
+/* Cards grid */
+.veng-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.veng-card {
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.veng-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 44px rgba(31, 49, 122, 0.12);
+}
+
+.veng-media {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: #F1F1F2;
+}
+
+.veng-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.veng-card:hover .veng-media img {
+  transform: scale(1.05);
+}
+
+.veng-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: 1px;
+  color: #fff;
+}
+
+.badge-embassy {
+  background: #1F317A;
+}
+
+.badge-ngo {
+  background: #03914D;
+}
+
+.badge-humanitarian {
+  background: #98CBE2;
+  color: #1F317A;
+}
+
+.veng-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #F1F1F2;
+}
+
+.veng-placeholder svg {
+  width: 34px;
+  height: 34px;
+  color: rgba(31, 49, 122, 0.18);
+}
+
+.veng-placeholder span {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(31, 49, 122, 0.3);
+}
+
+.veng-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.veng-partner {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #03914D;
+  margin-bottom: 8px;
+}
+
+.veng-card-title {
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1F317A;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.veng-desc {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: #666;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.veng-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid #F1F1F2;
+}
+
+.veng-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+}
+
+.veng-meta-item svg {
+  width: 13px;
+  height: 13px;
+  color: #03914D;
+  flex-shrink: 0;
+}
+
+/* Empty state */
+.veng-empty {
+  background: #fff;
+  padding: 60px 40px;
+  text-align: center;
+  border: 2px dashed rgba(31, 49, 122, 0.1);
+}
+
+.veng-empty svg {
+  width: 48px;
+  height: 48px;
+  color: #e3e3e6;
+  margin: 0 auto 16px;
+}
+
+.veng-empty h4 {
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1F317A;
+  margin-bottom: 8px;
+}
+
+.veng-empty p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #888;
+  max-width: 340px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .veng-section {
+    padding: 64px 24px;
+  }
+  .veng-grid {
+    grid-template-columns: 1fr;
   }
 }

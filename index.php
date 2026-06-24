@@ -423,6 +423,42 @@ if (!$vivara_homepage_rendered_blocks) :
   </div>
 </section>
 
+<!-- Diplomacy & Collaboration -->
+<section class="veng-section" id="engagements">
+  <div class="veng-inner">
+    <div class="veng-eyebrow">Diplomacy & Collaboration</div>
+    <h2 class="veng-title">Engagements &<br>Partnerships.</h2>
+    <p class="veng-sub">Vivara's founder, Gistelle Semaan, actively engages with embassies, international organizations, and humanitarian partners — building the relationships that turn vision into systemic, cross-border impact.</p>
+
+    <!-- Category filter tabs -->
+    <div class="veng-tabs">
+      <button class="veng-tab active" data-cat="all" onclick="vengFilter('all', this)">All Engagements <span class="veng-tab-count" id="veng-count-all">0</span></button>
+      <button class="veng-tab" data-cat="embassy" onclick="vengFilter('embassy', this)">Embassies <span class="veng-tab-count" id="veng-count-embassy">0</span></button>
+      <button class="veng-tab" data-cat="ngo" onclick="vengFilter('ngo', this)">Organizations <span class="veng-tab-count" id="veng-count-ngo">0</span></button>
+      <button class="veng-tab" data-cat="humanitarian" onclick="vengFilter('humanitarian', this)">Humanitarian Aid <span class="veng-tab-count" id="veng-count-humanitarian">0</span></button>
+    </div>
+
+    <!-- Category: Embassies -->
+    <div class="veng-category" data-cat="embassy">
+      <div class="veng-cat-label">Embassies & Diplomatic Missions</div>
+      <div class="veng-grid" id="veng-grid-embassy"></div>
+    </div>
+
+    <!-- Category: Organizations -->
+    <div class="veng-category" data-cat="ngo">
+      <div class="veng-cat-label">Organizations & Institutions</div>
+      <div class="veng-grid" id="veng-grid-ngo"></div>
+    </div>
+
+    <!-- Category: Humanitarian -->
+    <div class="veng-category" data-cat="humanitarian">
+      <div class="veng-cat-label">Social & Humanitarian Aid</div>
+      <div class="veng-grid" id="veng-grid-humanitarian"></div>
+    </div>
+
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section class="final-cta" id="contact">
   <div class="final-cta-content">
@@ -440,6 +476,124 @@ if (!$vivara_homepage_rendered_blocks) :
 <script>
     jQuery(document).ready(function($) {
     })
+</script>
+<!-- Diplomacy & Collaboration -->
+<script>
+  // ═══════════════════════════════════════════════════════════
+  //  ENGAGEMENT CONTENT — EDIT BELOW
+  //  Add a new entry by copying one { ... } block and filling it in.
+  //  Leave image:"" to show a styled placeholder until photos arrive.
+  // ═══════════════════════════════════════════════════════════
+
+  // ── EMBASSIES & DIPLOMATIC MISSIONS ──
+  const embassyEngagements = [
+    {
+      partner: "Embassy of Malaysia",
+      title: "Diplomatic Roundtable on Youth & Diaspora",
+      description: "A bilateral meeting exploring frameworks for diaspora engagement, career access for graduates, and cross-border youth collaboration.",
+      date: "2025",
+      location: "Beirut, Lebanon",
+      image: ""   // ← paste photo URL here
+    },
+    {
+      partner: "Gulf Diplomatic Missions",
+      title: "Relationship-Building Dialogues",
+      description: "Ongoing engagement with UAE and Kuwait missions, focused on career access and diaspora-return frameworks.",
+      date: "2025",
+      location: "Beirut, Lebanon",
+      image: ""
+    }
+  ];
+
+  // ── ORGANIZATIONS & INSTITUTIONS ──
+  const ngoEngagements = [
+    {
+      partner: "My Civic Future (MCF)",
+      title: "Civic Engagement Partnership",
+      description: "Collaboration with MCF — backed by the Rotary Club and Engineering Students Association — on youth civic participation initiatives.",
+      date: "2025",
+      location: "Beirut, Lebanon",
+      image: ""
+    },
+    {
+      partner: "Office of the First Lady",
+      title: "School of Citizenship Collaboration",
+      description: "Advisory engagement extending the national civic education program reaching schools and students across Lebanon.",
+      date: "2025",
+      location: "Lebanon",
+      image: ""
+    }
+  ];
+
+  // ── SOCIAL & HUMANITARIAN AID ──
+  const humanitarianEngagements = [
+    {
+      partner: "Community Outreach",
+      title: "Youth & Community Support Initiatives",
+      description: "Participation in social and humanitarian programs supporting underserved communities and youth across the Zgharta District and beyond.",
+      date: "2025",
+      location: "Zgharta District, Lebanon",
+      image: ""
+    }
+  ];
+
+  // ═══════════════════════════════════════════════════════════
+  //  RENDERING LOGIC — no need to edit below this line
+  // ═══════════════════════════════════════════════════════════
+  function vengIcon(cat) {
+    if (cat === 'embassy') return '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4l4 8 9 1-6.5 6 1.5 9L24 33l-8 5 1.5-9L11 13l9-1z"/></svg>';
+    if (cat === 'ngo') return '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="18"/><path d="M6 24h36M24 6c-5 5-8 11-8 18s3 13 8 18M24 6c5 5 8 11 8 18s-3 13-8 18"/></svg>';
+    return '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 42s-14-9-14-20a8 8 0 0114-5 8 8 0 0114 5c0 11-14 20-14 20z"/></svg>';
+  }
+
+  function vengBuildCard(item, cat) {
+    const badgeClass = cat === 'embassy' ? 'badge-embassy' : cat === 'ngo' ? 'badge-ngo' : 'badge-humanitarian';
+    const badgeText  = cat === 'embassy' ? 'Embassy' : cat === 'ngo' ? 'Organization' : 'Humanitarian';
+
+    const media = item.image
+      ? `<div class="veng-media"><img src="${item.image}" alt="${item.title}" loading="lazy"/><span class="veng-badge ${badgeClass}">${badgeText}</span></div>`
+      : `<div class="veng-media"><div class="veng-placeholder">${vengIcon(cat)}<span>Photo coming soon</span></div><span class="veng-badge ${badgeClass}">${badgeText}</span></div>`;
+
+    return `
+      <div class="veng-card">
+        ${media}
+        <div class="veng-body">
+          <div class="veng-partner">${item.partner}</div>
+          <div class="veng-card-title">${item.title}</div>
+          <p class="veng-desc">${item.description}</p>
+          <div class="veng-meta">
+            <div class="veng-meta-item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="11" rx="1"/><line x1="2" y1="7" x2="14" y2="7"/></svg>${item.date}</div>
+            <div class="veng-meta-item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1C5.2 1 3 3.2 3 6c0 4.2 5 9 5 9s5-4.8 5-9c0-2.8-2.2-5-5-5z"/><circle cx="8" cy="6" r="1.5"/></svg>${item.location}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function vengRenderCategory(arr, cat) {
+    const grid = document.getElementById('veng-grid-' + cat);
+    document.getElementById('veng-count-' + cat).textContent = arr.length;
+    if (!arr.length) {
+      grid.innerHTML = `<div class="veng-empty" style="grid-column:1/-1;">${vengIcon(cat)}<h4>Coming Soon</h4><p>Engagements in this category will appear here as they are added.</p></div>`;
+      return;
+    }
+    grid.innerHTML = arr.map(item => vengBuildCard(item, cat)).join('');
+  }
+
+  function vengFilter(cat, btn) {
+    document.querySelectorAll('.veng-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.veng-category').forEach(c => {
+      c.classList.toggle('hidden', cat !== 'all' && c.dataset.cat !== cat);
+    });
+  }
+
+  // Init
+  vengRenderCategory(embassyEngagements, 'embassy');
+  vengRenderCategory(ngoEngagements, 'ngo');
+  vengRenderCategory(humanitarianEngagements, 'humanitarian');
+  // Total count
+  document.getElementById('veng-count-all').textContent =
+    embassyEngagements.length + ngoEngagements.length + humanitarianEngagements.length;
 </script>
 <?php endif; ?>
 <?php get_footer();
