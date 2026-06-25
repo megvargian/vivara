@@ -289,6 +289,7 @@ function my_acf_init_block_types()
         vivara_register_homepage_section_block('vivara-approach', __('Vivara Approach'), 'approach.php', array('vivara', 'approach', 'homepage'));
         vivara_register_homepage_section_block('vivara-impact', __('Vivara Impact'), 'impact.php', array('vivara', 'impact', 'homepage'));
         vivara_register_homepage_section_block('vivara-partners', __('Vivara Partners'), 'partners.php', array('vivara', 'partners', 'homepage'));
+        vivara_register_homepage_section_block('vivara-diplomacy-collaboration', __('Vivara Diplomacy & Collaboration'), 'diplomacy-collaboration.php', array('vivara', 'diplomacy', 'collaboration', 'homepage'));
         vivara_register_homepage_section_block('vivara-final-cta', __('Vivara Final CTA'), 'final-cta.php', array('vivara', 'cta', 'homepage'));
     }
 }

@@ -1,0 +1,73 @@
+{
+  "key": "group_vivara_diplomacy_collaboration",
+  "title": "Vivara Diplomacy & Collaboration",
+  "fields": [
+    {"key": "field_vivara_diplomacy_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text"},
+    {"key": "field_vivara_diplomacy_title", "label": "Title", "name": "title", "type": "textarea", "rows": 3, "new_lines": ""},
+    {"key": "field_vivara_diplomacy_subtitle", "label": "Subtitle", "name": "subtitle", "type": "textarea", "rows": 4, "new_lines": ""},
+    {"key": "field_vivara_diplomacy_all_label", "label": "All Tab Label", "name": "all_label", "type": "text"},
+    {"key": "field_vivara_diplomacy_embassy_label", "label": "Embassy Tab Label", "name": "embassy_label", "type": "text"},
+    {"key": "field_vivara_diplomacy_ngo_label", "label": "Organizations Tab Label", "name": "ngo_label", "type": "text"},
+    {"key": "field_vivara_diplomacy_humanitarian_label", "label": "Humanitarian Tab Label", "name": "humanitarian_label", "type": "text"},
+    {
+      "key": "field_vivara_diplomacy_embassy_cards",
+      "label": "Embassy Cards",
+      "name": "embassy_cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Embassy Card",
+      "sub_fields": [
+        {"key": "field_vivara_diplomacy_embassy_badge", "label": "Badge", "name": "badge", "type": "text"},
+        {"key": "field_vivara_diplomacy_embassy_partner", "label": "Partner", "name": "partner", "type": "text"},
+        {"key": "field_vivara_diplomacy_embassy_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_diplomacy_embassy_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_diplomacy_embassy_meta_1", "label": "Meta 1", "name": "meta_1", "type": "text"},
+        {"key": "field_vivara_diplomacy_embassy_meta_2", "label": "Meta 2", "name": "meta_2", "type": "text"},
+        {"key": "field_vivara_diplomacy_embassy_image", "label": "Image", "name": "image", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all"}
+      ]
+    },
+    {
+      "key": "field_vivara_diplomacy_ngo_cards",
+      "label": "Organizations Cards",
+      "name": "ngo_cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Organization Card",
+      "sub_fields": [
+        {"key": "field_vivara_diplomacy_ngo_badge", "label": "Badge", "name": "badge", "type": "text"},
+        {"key": "field_vivara_diplomacy_ngo_partner", "label": "Partner", "name": "partner", "type": "text"},
+        {"key": "field_vivara_diplomacy_ngo_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_diplomacy_ngo_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_diplomacy_ngo_meta_1", "label": "Meta 1", "name": "meta_1", "type": "text"},
+        {"key": "field_vivara_diplomacy_ngo_meta_2", "label": "Meta 2", "name": "meta_2", "type": "text"},
+        {"key": "field_vivara_diplomacy_ngo_image", "label": "Image", "name": "image", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all"}
+      ]
+    },
+    {
+      "key": "field_vivara_diplomacy_humanitarian_cards",
+      "label": "Humanitarian Cards",
+      "name": "humanitarian_cards",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Humanitarian Card",
+      "sub_fields": [
+        {"key": "field_vivara_diplomacy_humanitarian_badge", "label": "Badge", "name": "badge", "type": "text"},
+        {"key": "field_vivara_diplomacy_humanitarian_partner", "label": "Partner", "name": "partner", "type": "text"},
+        {"key": "field_vivara_diplomacy_humanitarian_title", "label": "Title", "name": "title", "type": "text"},
+        {"key": "field_vivara_diplomacy_humanitarian_description", "label": "Description", "name": "description", "type": "textarea", "rows": 3, "new_lines": ""},
+        {"key": "field_vivara_diplomacy_humanitarian_meta_1", "label": "Meta 1", "name": "meta_1", "type": "text"},
+        {"key": "field_vivara_diplomacy_humanitarian_meta_2", "label": "Meta 2", "name": "meta_2", "type": "text"},
+        {"key": "field_vivara_diplomacy_humanitarian_image", "label": "Image", "name": "image", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all"}
+      ]
+    }
+  ],
+  "location": [[{"param": "block", "operator": "==", "value": "acf/vivara-diplomacy-collaboration"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "modified": 1782441600
+}
