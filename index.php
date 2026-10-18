@@ -273,7 +273,7 @@ if (!$vivara_homepage_rendered_blocks) :
 </section>
 
 <!-- FOUNDERS -->
-<section class="founders" id="founders">
+<!-- <section class="founders" id="founders">
   <div class="eyebrow reveal"><div class="eyebrow-line"></div>Founders</div>
   <h2 class="big-title reveal">The People<br>Behind Vivara.</h2>
   <p class="founders-sub reveal reveal-delay-1">Meet the people behind Vivara's network of leadership, expertise, and long-term support.</p>
@@ -333,7 +333,7 @@ if (!$vivara_homepage_rendered_blocks) :
       </div>
     </article>
   </div>
-</section>
+</section> -->
 
 <!-- APPROACH -->
 <section class="approach" id="approach">

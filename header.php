@@ -39,7 +39,7 @@
     <li><a href="#mission">Mission</a></li>
     <li><a href="#pillars">Pillars</a></li>
     <li><a href="#programs">Programs</a></li>
-    <li><a href="#founders">Founders</a></li>
+    <!-- <li><a href="#founders">Founders</a></li> -->
     <li><a href="#impact">Impact</a></li>
     <li><a href="#partners">Partners</a></li>
     <li><a href="#engagements">Diplomacy & Collaboration</a></li>
